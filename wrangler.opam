@@ -9,7 +9,7 @@ homepage: "https://github.com/ml-in-barcelona/opam-wrangler"
 bug-reports: "https://github.com/ml-in-barcelona/opam-wrangler/issues"
 dev-repo: "git+https://github.com/ml-in-barcelona/opam-wrangler.git"
 x-maintenance-intent: ["(latest)"]
-version: "4.151.3"
+version: "4.152.0"
 available: [ (os = "linux" | os = "macos") & (arch = "x86_64" | arch = "arm64") ]
 depends: [
   "conf-npm"
@@ -35,7 +35,7 @@ build: [
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/error-stack-parser-es" "error-stack-parser-es-1.0.5.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/esbuild" "esbuild-0.28.2.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/kleur" "kleur-4.1.5.tgz"]
-  ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/miniflare" "miniflare-5.20261019.1-beta.tgz"]
+  ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/miniflare" "miniflare-5.20261019.2-beta.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/path-to-regexp" "path-to-regexp-6.3.0.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/pathe" "pathe-2.0.3.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/semver" "semver-7.8.5.tgz"]
@@ -44,7 +44,7 @@ build: [
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/undici" "undici-7.29.1.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/unenv" "unenv-2.0.0-rc.24.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/workerd" "workerd-1.20261019.1.tgz"]
-  ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/wrangler" "wrangler-4.151.3.tgz"]
+  ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/wrangler" "wrangler-4.152.0.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/ws" "ws-8.21.0.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/youch" "youch-4.1.0-beta.10.tgz"]
   ["sh" "-c" "mkdir -p \"$0\" && tar -xzf \"$1\" -C \"$0\" --strip-components=1" "node_modules/youch-core" "youch-core-0.3.3.tgz"]
@@ -134,9 +134,9 @@ extra-source "kleur-4.1.5.tgz" {
   src: "https://registry.npmjs.org/kleur/-/kleur-4.1.5.tgz"
   checksum: "sha512=a3e34efbc5ab462404138ffb9f044984dd475a9566266e75d690475313cbb69d015084b3941a653916129937250a726f42adad2aefec825df156991ced95ae41"
 }
-extra-source "miniflare-5.20261019.1-beta.tgz" {
-  src: "https://registry.npmjs.org/miniflare/-/miniflare-5.20261019.1-beta.tgz"
-  checksum: "sha512=d67ecc37652a6673e78b2600a8db95d581006a36baea8cca19509ce594e6610853b9b9e803018b71cc1bf995982ce6a3bb0de939a27bd2efff6d932e5119517b"
+extra-source "miniflare-5.20261019.2-beta.tgz" {
+  src: "https://registry.npmjs.org/miniflare/-/miniflare-5.20261019.2-beta.tgz"
+  checksum: "sha512=40d80203f6b18b367b92fed15779f06d1a33fb0e306ad065c08b325e3c20607c38792c3906b475176d79dacdcacfe073cbf6318ca147ad99772f30516cf818a1"
 }
 extra-source "path-to-regexp-6.3.0.tgz" {
   src: "https://registry.npmjs.org/path-to-regexp/-/path-to-regexp-6.3.0.tgz"
@@ -170,9 +170,9 @@ extra-source "workerd-1.20261019.1.tgz" {
   src: "https://registry.npmjs.org/workerd/-/workerd-1.20261019.1.tgz"
   checksum: "sha512=51461152affb0e6782975d58ae235b7156e351954bb6df2eb825c5bbe9f3efb84615ff1de031155e8098b6703e32505ab44e3ec31a23e3b0d5ab32b7c460408b"
 }
-extra-source "wrangler-4.151.3.tgz" {
-  src: "https://registry.npmjs.org/wrangler/-/wrangler-4.151.3.tgz"
-  checksum: "sha512=9b33d02e6900859515ec276202113e8622002654bdc4f2fabd97b507ca1016e5b116eee79909ef1c056370071a6f04869171571fdbaca735f01ce16b7db426a9"
+extra-source "wrangler-4.152.0.tgz" {
+  src: "https://registry.npmjs.org/wrangler/-/wrangler-4.152.0.tgz"
+  checksum: "sha512=9665d3175b020c4a81684329ade19ccef83fc7700887577fab173804deeeb50e23103c1d038606d0bea4af77afd13b552c745be902f248d00e02e9f09fe74778"
 }
 extra-source "ws-8.21.0.tgz" {
   src: "https://registry.npmjs.org/ws/-/ws-8.21.0.tgz"
