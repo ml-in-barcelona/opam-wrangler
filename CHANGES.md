@@ -1,5 +1,9 @@
 # Changes
 
+## 4.156.0
+
+- Update to wrangler 4.156.0. It needs workerd 1.20261023.1.
+
 ## 4.155.0
 
 - Update to wrangler 4.155.0. It needs workerd 1.20261023.1.
